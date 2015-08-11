@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+Lab Environment NAT Translations:
+The network devices in the lab environment have a firewall in front of them. This firewall is performing NAT. Consequently, several network devices are sharing the same public IP address. The below table specifies the ports that the network devices use.
+
+IP address = 50.76.53.27
+
+pynet-rtr1 (Cisco 881) snmp_port=7961, ssh_port=22
+pynet-rtr2 (Cisco 881) snmp_port=8061, ssh_port=8022
+pynet-sw1 (Arista vEOS switch) ssh_port=8222, eapi_port=8243
+pynet-sw2 (Arista vEOS switch) ssh_port=8322, eapi_port=8343
+pynet-sw3 (Arista vEOS switch) ssh_port=8422, eapi_port=8443
+pynet-sw4 (Arista vEOS switch) ssh_port=8522, eapi_port=8543
+pynet-jnpr-srx1 (Juniper SRX) ssh_port=9822, netconf_port=830
+
